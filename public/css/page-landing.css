@@ -28,7 +28,7 @@ h1,
 
 main h1{
     animation-delay: 150ms;
-    font-size: clamp(4rem, 8vw, 8.4rem);
+    font-size: clamp(4rem, 7vw, 8.4rem);
 }
 
 .visit p {
@@ -60,9 +60,9 @@ main h1{
 /* desktop version */
 @media(min-width: 760px){
     #container{
-        padding: 5rem 2rem;
+        padding: 1rem 2rem;
         background: url('../images/bg.svg') no-repeat 80% /
-        clamp(30rem, 54vw, 56rem);
+        clamp(30rem, 35vw, 56rem);
     }
 
     header{

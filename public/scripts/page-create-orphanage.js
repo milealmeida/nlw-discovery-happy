@@ -80,3 +80,19 @@ function toggleSelect(event){
 
     input.value = button.dataset.value;
 }
+
+function validate(event){
+
+    //validar se lat e lng estão preenchidos
+    const needsLatAndLng = event.lat;
+
+    if(needsLatAndLng.value == ""){
+
+        alert('Selecione um ponto no mapa!');
+        return false;
+        
+    }
+
+    return true;
+    
+}

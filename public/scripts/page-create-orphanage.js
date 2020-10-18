@@ -2,7 +2,13 @@
 const map = L.map('mapid').setView([-27.222633, -49.6455874], 15);
 
 // create and add tileLayes
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+//L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoibWlsZWFsbWVpZGEiLCJhIjoiY2tnNzcyZzI3MDRscDJ5bXpjYmoyY3l0NiJ9.3NlXNdZwgEAD26zeRbsJzQ'
+}).addTo(map);
 
 // create icon
 const icon = L.icon({

@@ -1,6 +1,7 @@
 //importar dependência
 const express = require('express');
 const path = require('path');
+const { config } = require('process');
 const pages = require('./pages');
 
 //iniciando o express
